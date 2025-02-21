@@ -49,5 +49,3 @@ A collection of 12 different workout sets tailored for various fitness goals. Ea
 ![WhatsApp Image 2025-02-21 at 21 27 43_acf1fce1](https://github.com/user-attachments/assets/7be8ac3c-7a02-48de-9988-427ebcd839f3)
 
 
-9. Ideal Calorie Intake Calculator
-A nutrition tool that estimates daily calorie requirements based on the user’s age, gender, weight, and activity level. It provides recommendations for maintaining, losing, or gaining weight based on the user's fitness goals.
