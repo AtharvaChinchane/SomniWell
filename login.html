@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px ;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(10, 33, 102, 0.941);
+  }
+  
+        .mainfoot{
+          background-color: rgb(58, 185, 223);
+          display:flex;
+          justify-content: left;
+          margin-top:150px;
+          background-image: url("A:\web\project\WhatsApp Image 2024-04-12 at 10.52.42_9308783f.jpg");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+        .foot{
+          width:250px;
+          justify-content: center;
+          margin-left:300px;
+          margin-bottom: 50px;
+          text-align: justify;
+          margin-top:50px;
+        }
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 50%;
+        }
+        .fa:hover {
+          opacity: 0.5;
+        }
+        .fa-facebook {
+          border:solid 1px white;
+          background: #3B5998;
+          color: white;
+        }
+        .fa-twitter {
+          border:solid 1px white;
+          background: #55ACEE;
+          color: white;
+        }
+        .fa-linkedin{
+          border:solid 2px white;
+          background-color: #0072b1;
+          color: white;
+        }
+</style>        
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SomniWell</title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-link nav-link" style="font-size: 3.0rem;margin-left:20px; color:goldenrod;" href="main.html">Somni<span class="material-symbols-outlined" style="color:white;font-size: 2.1rem;">fitness_center</span>Well</a>
+      <span style="margin-left: 800px;">
+      <a class="navbar-link nav-link text-light active-text-danger" style="font-size: 1.2rem;" href="about.html">About Us</a>
+      </span>
+      <span>
+      <a class="navbar-link nav-link text-light" style="font-size: 1.2rem;" href="contact.html">Contact Us</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:rgb(255, 255, 255);background-color: #233040;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" style="background-color: #233040;">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 1.8rem;color:goldenrod;">Somni<span class="material-symbols-outlined" style="color:white;">fitness_center</span>Well</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="background-color: #233040;">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="profile.html"><span class="material-symbols-outlined">person</span>&nbsp&nbsp Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sleep.html"><span class="material-symbols-outlined">group</span>&nbsp&nbsp Sleep Quality Score</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="bmi.html"><span class="material-symbols-outlined">calculate</span>&nbsp&nbsp BMI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="workout.html"><span class="material-symbols-outlined">exercise</span>&nbsp&nbsp Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="calorie.html"><span class="material-symbols-outlined">functions</span>&nbsp&nbsp Calorie calculator</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">login</span>&nbsp&nbsp Sign Up/Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">logout</span>&nbsp&nbsp Log Out</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:15px;">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">settings</span>&nbsp&nbsp Settings</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:65px;">
+            <a class="nav-link text-light" href="contact.html"><span class="material-symbols-outlined">help</span>&nbsp&nbsp Need Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <br><br>
+
+    <div class="container">
+        <h1 style="color: #b0903d;">Login</h1>
+        <form id="loginForm" action="#" method="POST">
+            <label class="lab" for="username">Username</label>
+            <input class="in" type="text" id="username" name="username" required><br><br>
+            <label class="lab" for="password">Password</label>
+            <input class="in" type="password" id="password" name="password" required><br><br>
+            <button id="loginbutton" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+    <footer class="mainfoot">
+        <div class="foot">
+            <h9 style="font-size: 20px;color:white;"><b>About Us</b></h9>
+            <br><br>
+            <p>SomniWell blends AI-powered sleep tracking with smart wellness tools. Predict your sleep quality, track BMI, crush goals with 12 unique workouts, and balance nutrition with a calorie counter—all in one sleek platform.</p>
+        </div>
+        <div class="foot">
+            <h9 style="font-size: 20px;color:white;"><b>News Letter</b></h9>
+            <br><br>
+            <p>Sign up for the latest products and updates</p>
+            <br>
+            <h9 style="font-size: 20px;color:white;"><b>Follow Us On</b></h9>
+            <br><br>
+            <a href="#" class="fa fa-facebook"></a>&nbsp&nbsp<a href="#" class="fa fa-twitter"></a>&nbsp&nbsp<a href="#"
+                class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Please enter a username and password');
+                return;
+            }
+            else if(username.length < 6){
+                alert('Username is too short');
+                return;
+            }
+            else if(password.length < 6){
+                alert('Password is weak');
+                return;
+            }
+            else{
+                alert('You have successfully logged in');
+                document.getElementById('loginForm').reset();
+                localStorage.setItem('username', username);
+                window.location.href = 'info.html';
+                return;
+            }
+
+            console.log('Username:', username);
+            console.log('Password:', password);
+
+        });
+    </script>
+</body>
+
+</html>

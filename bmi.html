@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  
+.mainfoot{
+  background-color: rgb(58, 185, 223);
+  display:flex;
+  justify-content: left;
+  margin-top:150px;
+  background-image: url("A:\web\project\WhatsApp Image 2024-04-12 at 10.52.42_9308783f.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.foot{
+  width:250px;
+  justify-content: center;
+  margin-left:300px;
+  margin-bottom: 50px;
+  text-align: justify;
+  margin-top:50px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.5;
+}
+.fa-facebook {
+  border:solid 1px white;
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  border:solid 1px white;
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin{
+  border:solid 2px white;
+  background-color: #0072b1;
+  color: white;
+}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(10, 33, 102, 0.941);
+  }
+  
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+  }
+
+  label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: black;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 8px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(58, 223, 99);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color:rgb(58, 223, 99);
+  }
+
+  #result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color:rgb(58, 223, 99)  ;
+  }
+
+  .section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color:aliceblue;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    color: #233040;
+  }
+
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: rgb(58, 185, 223);
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .advice {
+    color: #233040;
+    font-size: 18px;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SomniWell</title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-link nav-link" style="font-size: 3.0rem;margin-left:20px; color:goldenrod;" href="main.html">Somni<span class="material-symbols-outlined" style="color:white;font-size: 2.1rem;">fitness_center</span>Well</a>
+      <span style="margin-left: 800px;">
+      <a class="navbar-link nav-link text-light active-text-danger" style="font-size: 1.2rem;" href="about.html">About Us</a>
+      </span>
+      <span>
+      <a class="navbar-link nav-link text-light" style="font-size: 1.2rem;" href="contact.html">Contact Us</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:rgb(255, 255, 255);background-color: #233040;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" style="background-color: #233040;">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 1.8rem;color:goldenrod;">Somni<span class="material-symbols-outlined" style="color:white;">fitness_center</span>Well</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="background-color: #233040;">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="profile.html"><span class="material-symbols-outlined">person</span>&nbsp&nbsp Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sleep.html"><span class="material-symbols-outlined">group</span>&nbsp&nbsp Sleep Quality Score</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="bmi.html"><span class="material-symbols-outlined">calculate</span>&nbsp&nbsp BMI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="workout.html"><span class="material-symbols-outlined">exercise</span>&nbsp&nbsp Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="calorie.html"><span class="material-symbols-outlined">functions</span>&nbsp&nbsp Calorie calculator</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">login</span>&nbsp&nbsp Sign Up/Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">logout</span>&nbsp&nbsp Log Out</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:15px;">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">settings</span>&nbsp&nbsp Settings</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:65px;">
+            <a class="nav-link text-light" href="contact.html"><span class="material-symbols-outlined">help</span>&nbsp&nbsp Need Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <br><br>
+
+<div class="container">
+  <img src="A:\web\project\1-1-removebg-preview.png" alt="BMI Calculator Image" style="max-width: 100%; height: auto">
+  <h1>BMI Calculator</h1>
+  <p>Calculate your Body Mass Index (BMI)</p>
+
+  <label for="weight">Weight (kg):</label>
+  <input type="number" id="weight" name="weight" required><br><br>
+
+  <label for="height">Height (cm):</label>
+  <input type="number" id="height" name="height" required><br><br>
+
+  <button onclick="calculateBMI()">Calculate BMI</button>
+
+  <div id="result"></div>
+
+  <div class="section" id="underweight">
+    <h2>Underweight (BMI &lt; 18.5)</h2>
+    <p class="advice">Underweight individuals may need to focus on consuming more calories and nutrients to reach a healthy weight. Consider consulting with a healthcare professional or a nutritionist for personalized advice.</p>
+    <h3>Steps to Improve Weight:</h3>
+      <p> Calculate your daily caloric needs and aim to consume more calories than you burn each day. Focus on calorie-dense foods such as nuts, seeds, avocados, whole milk, and lean meats</p>
+      <p> Incorporate regular strength training exercises to build muscle mass. Aim for a mix of compound exercises (like squats, deadlifts, and bench presses) and isolation exercises to target specific muscle groups.</p>
+      <p>Ensure adequate protein intake to support muscle growth and repair. Include protein-rich foods such as eggs, chicken, fish, tofu, Greek yogurt, and protein shakes in your diet.</p>
+      <p> Eat smaller, frequent meals throughout the day to maintain a consistent calorie intake. Include snacks between meals to boost overall calorie consumption.</p>
+      <p> Track your weight gain progress regularly, but focus more on muscle gain rather than solely on the number on the scale. Adjust your diet and exercise routine accordingly to continue making progress.</p>   
+                
+                    
+  </div>
+
+  <div class="section" id="normal">
+    <h2>Normal Weight (BMI 18.5 - 24.9)</h2>
+    <p class="advice">Congratulations! Your BMI falls within the normal weight range. Continue to maintain a balanced diet and active lifestyle to stay healthy.</p>
+    <h3>Steps to Maintain Weight:</h3> 
+    <p> Maintain a well-balanced diet that includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Pay attention to portion sizes and avoid overeating or undereating.</p>
+    <p> Engage in regular physical activity to maintain muscle mass, cardiovascular health, and overall well-being. Aim for a mix of cardiovascular exercises, strength training, and flexibility exercises.</p>
+    <p> Be mindful of your calorie intake and expenditure. Adjust your diet and exercise routine as needed to maintain a stable weight and BMI within a healthy range.</p>
+    <p> Incorporate healthy habits into your daily routine, such as staying hydrated, getting enough sleep, managing stress levels, and avoiding excessive alcohol consumption and smoking.</p>
+    <p> Regularly assess your weight and BMI to ensure they remain within a healthy range. If you notice any significant changes, consult with a healthcare professional for guidance and support.</p>
+  </div>
+
+  <div class="section" id="overweight">
+    <h2>Overweight (BMI 25 - 29.9)</h2>
+    <p class="advice">If you are overweight, focusing on portion control, healthy eating habits, and regular exercise can help you achieve a healthier weight. Consider incorporating more fruits, vegetables, and lean proteins into your diet.</p>
+    <h3>Steps to Reduce Weight:</h3>
+    <p> Determine a realistic target BMI and set achievable milestones. Aim for gradual, sustainable weight loss rather than rapid changes.</p>
+    <p> Focus on consuming a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. Limit intake of processed foods, sugary snacks, and high-calorie beverages.</p>
+    <p> Incorporate a mix of cardiovascular exercises (like walking, running, or swimming) and strength training to burn calories and build muscle mass. Aim for at least 150 minutes of moderate-intensity exercise per week.</p>
+    <p> Be mindful of portion sizes to avoid overeating. Use smaller plates, measure serving sizes, and pay attention to hunger cues to prevent unnecessary snacking.</p>
+    <p> Make sustainable lifestyle changes such as getting adequate sleep, managing stress levels, and reducing sedentary activities like prolonged sitting or screen time.</p>
+  </div>
+
+  <div class="section" id="obese">
+    <h2>Obese (BMI 30 - 34.9)</h2>
+    <p class="advice">If you are obese, focusing on portion control, healthy eating habits, and regular exercise can help you achieve a healthier weight. Consider incorporating more fruits, vegetables, and lean proteins into your diet.</p>
+    <h3>Steps to Reduce Weight:</h3>
+        <p>Seek guidance from a healthcare professional, such as a doctor or registered dietitian, to create a personalized weight loss plan tailored to your needs and health conditions.</p>
+        <p>Gradually reduce your calorie intake to create a moderate calorie deficit while still ensuring adequate nutrition. Aim for a sustainable weight loss of 1-2 pounds per week.</p>
+        <p>Focus on incorporating whole, nutrient-dense foods into your diet, including fruits, vegetables, lean proteins, whole grains, and healthy fats. Limit or avoid processed foods, sugary snacks, and high-calorie beverages.</p>
+        <p>Increase your level of physical activity gradually, aiming for at least 150 minutes of moderate-intensity aerobic exercise per week, along with strength training exercises to preserve muscle mass.</p>
+        <p> Address underlying behaviors that contribute to overeating or sedentary lifestyle, such as emotional eating, stress management, and establishing healthy coping mechanisms.</p>
+  </div>
+  
+  <div class="section" id="extremely_obese">
+    <h2>Extreme Obese (BMI &gt; 35)</h2>
+    <p class="advice">If you are extremely obese, it's important to prioritize weight loss for overall health and well-being. Consult with a healthcare professional to create a personalized plan that includes diet modifications, exercise, and possibly medical interventions.</p>
+    <h3>Steps to Reduce Weight:</h3>
+        <p>Prioritize a thorough medical evaluation to assess any underlying health conditions or factors contributing to extreme obesity. Work closely with healthcare professionals, including doctors, dietitians, and possibly specialists like bariatric surgeons.</p>
+        <p>Develop a comprehensive weight loss plan that may include dietary interventions, physical activity recommendations, behavioral therapy, and possibly medical interventions like medications or bariatric surgery, depending on individual circumstances.</p>
+        <p>Consider structured meal plans or meal replacements under the guidance of a healthcare professional to ensure adequate nutrition while achieving significant weight loss.</p>
+        <p>Engage in multidisciplinary support programs that may include counseling, support groups, and ongoing monitoring to address both physical and psychological aspects of extreme obesity.</p>
+        <p> Emphasize the importance of long-term management and lifestyle changes to sustain weight loss and improve overall health outcomes. This may involve ongoing support from healthcare providers, regular monitoring, and adjustments to the weight loss plan as needed.</p>
+  </div>
+</div>
+
+<script>
+  function calculateBMI() {
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value) / 100; 
+    const bmi = weight / (height * height);
+
+    document.getElementById('result').innerHTML = `Your BMI: ${bmi.toFixed(1)}`;
+
+    if (bmi < 18.5) {
+      showSection('underweight');
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+      showSection('normal');
+    } else if (bmi >= 25 && bmi <= 29.9) {
+      showSection('overweight');
+    }  else if (bmi >= 30 && bmi <= 34.9) {
+      showSection('obese');
+    }else {
+      showSection('extremely_obese');
+    }
+  }
+
+  function showSection(sectionId) {
+    const sections = document.getElementsByClassName('section');
+    for (let section of sections) {
+      section.style.display = 'none';
+      section.classList.remove('fadeIn');
+    }
+    const sectionToShow = document.getElementById(sectionId);
+    sectionToShow.style.display = 'block';
+    setTimeout(() => {
+      sectionToShow.classList.add('fadeIn');
+    }, 100);
+  }
+</script>
+<footer class="mainfoot">
+  <div class="foot">
+    <h9 style="font-size: 20px;"><b>About Us</b></h9>
+    <br><br>
+    <p>SomniWell blends AI-powered sleep tracking with smart wellness tools. Predict your sleep quality, track BMI, crush goals with 12 unique workouts, and balance nutrition with a calorie counter—all in one sleek platform.</p>
+  </div>
+  <div class="foot">
+    <h9 style="font-size: 20px;"><b>News Letter</b></h9>
+    <br><br>
+    <p>Sign up for the latest products and updates</p>
+    <br>
+    <h9 style="font-size: 20px;"><b>Follow Us On</b></h9>
+    <br><br>
+    <a href="#" class="fa fa-facebook"></a>&nbsp&nbsp<a href="#" class="fa fa-twitter"></a>&nbsp&nbsp<a href="#" class="fa fa-linkedin"></a>
+  </div>
+</footer>
+</body>
+</html>

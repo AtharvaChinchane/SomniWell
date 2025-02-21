@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    button{
+      background-color:rgb(32, 218, 66);
+      color: white;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: aliceblue;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .calculator {
+        width: 400px;
+        padding: 20px;
+        padding-top: 5px;
+        text-align: center;
+        background-color: aliceblue;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-right: 35px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px darkblue;
+    }
+
+    .info-container {
+        width: calc(33.33% - 40px);
+        padding: 20px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px darkblue;
+    }
+
+    h1 {
+        color: goldenrod;
+    }
+    h11{
+      font-weight: bold;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .input-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .result {
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(32, 218, 66);
+    }
+
+    .steps {
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .steps h2 {
+        color: darkblue;
+        text-align: center;
+    }
+
+    .steps ul {
+        list-style-type: decimal;
+        padding-left: 20px;
+    }
+
+    .steps li {
+        margin-bottom: 10px;
+    }
+
+    .tips {
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .tips h2 {
+        color: darkblue;
+    }
+
+    .tips p {
+        color: darkblue;
+    }
+
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SomniWell</title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-link nav-link" style="font-size: 3.0rem;margin-left:20px; color:goldenrod;" href="main.html">Somni<span class="material-symbols-outlined" style="color:white;font-size: 2.1rem;">fitness_center</span>Well</a>
+      <span style="margin-left: 800px;">
+      <a class="navbar-link nav-link text-light active-text-danger" style="font-size: 1.2rem;" href="about.html">About Us</a>
+      </span>
+      <span>
+      <a class="navbar-link nav-link text-light" style="font-size: 1.2rem;" href="contact.html">Contact Us</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:rgb(255, 255, 255);background-color: #233040;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" style="background-color: #233040;">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 1.8rem;color:goldenrod;">Somni<span class="material-symbols-outlined" style="color:white;">fitness_center</span>Well</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="background-color: #233040;">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="profile.html"><span class="material-symbols-outlined">person</span>&nbsp&nbsp Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sleep.html"><span class="material-symbols-outlined">group</span>&nbsp&nbsp Sleep Quality Score</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="bmi.html"><span class="material-symbols-outlined">calculate</span>&nbsp&nbsp BMI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="workout.html"><span class="material-symbols-outlined">exercise</span>&nbsp&nbsp Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="calorie.html"><span class="material-symbols-outlined">functions</span>&nbsp&nbsp Calorie calculator</a>
+          </li>
+          <hr style="color:white">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">login</span>&nbsp&nbsp Sign Up/Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">logout</span>&nbsp&nbsp Log Out</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:15px;">
+            <a class="nav-link text-light" href="#"><span class="material-symbols-outlined">settings</span>&nbsp&nbsp Settings</a>
+          </li>
+          <li class="nav-item" style="position: absolute;bottom:65px;">
+            <a class="nav-link text-light" href="contact.html"><span class="material-symbols-outlined">help</span>&nbsp&nbsp Need Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    <br><br><br><br>
+    <div class="container">
+
+        <div class="info-container">
+            <h2>How Calories Are Counted?</h2>
+            <p>Calories are units of energy derived from food and beverages consumed. Here's how they are counted:</p>
+            <h11>Use the Harris-Benedict Equation to estimate Basal Metabolic Rate (BMR):</h11>
+            <p>Men: BMR = 10 * weight + 6.25 * height - 5 * age + 5</p>
+            <p>  Women: BMR = 10 * weight + 6.25 * height - 5 * age - 161</p>
+            <p>Adjust BMR based on activity level for Total Daily Energy Expenditure (TDEE).</p><br>
+          <h11>Activity Multipliers:</h11>
+            <p>Sedentary: BMR * 1.2</p>
+            <p>Lightly active: BMR * 1.375</p>
+            <p>Moderately active: BMR * 1.55</p>
+            <p>Very active: BMR * 1.725</p>
+            <p>Extra active: BMR * 1.9</p><br>
+          <h11>Daily Calorie Intake:</h11>
+          </p>TDEE guides daily calorie consumption for weight management.</p>
+        </div>
+        <div class="calculator">
+          <img src="A:\web\project\istockphoto-1340965870-612x612-removebg-previe.png" alt="BMI Calculator Image"
+              style="max-width: 100%; height: 250px">
+          <h1>Calorie Calculator</h1><br>
+          <div class="input-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" placeholder="Enter your age">
+          </div>
+
+          <div class="input-group">
+              <label for="weight">Weight (kg):</label>
+              <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+          </div>
+
+          <div class="input-group">
+              <label for="height">Height (cm):</label>
+              <input type="number" id="height" name="height" placeholder="Enter your height">
+          </div>
+
+          <div class="input-group">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+              </select>
+          </div>
+
+          <div class="input-group">
+              <label for="activity">Activity Level:</label>
+              <select id="activity" name="activity">
+                  <option value="sedentary">Sedentary (little or no exercise)</option>
+                  <option value="lightly_active">Lightly active (light exercise/sports 1-3 days a week)</option>
+                  <option value="moderately_active">Moderately active (moderate exercise/sports 3-5 days a week)</option>
+                  <option value="very_active">Very active (hard exercise/sports 6-7 days a week)</option>
+                  <option value="extra_active">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+              </select>
+          </div>
+
+          <div class="input-group">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="calculate()">Calculate</button>
+          </div>
+
+          <div class="result" id="result"></div>
+
+          <div class="steps" id="steps"></div>
+      </div>
+
+        <div class="info-container">
+            <h2>Importance of Calorie Counting</h2>
+            <p>Calorie counting plays a crucial role in achieving and maintaining a healthy lifestyle:</p>
+            
+                <p><strong>Weight Management : </strong> Monitoring calorie intake helps control weight by ensuring a balance between calories consumed and burned.</p>
+                <p><strong>Nutritional Awareness : </strong> Tracking calories promotes awareness of nutritional content in foods and encourages healthier eating habits.</p>
+                <p><strong>Personalized Nutrition : </strong> Tailoring calorie intake to individual needs supports optimal energy levels and overall well-being.</p>
+                <p><strong>Goal Setting : </strong> Setting calorie targets aids in achieving fitness goals, whether it's weight loss, muscle gain, or maintenance.</p>
+                <p><strong>Accountability : </strong> Keeping a food diary or using apps fosters accountability and helps identify patterns and areas for improvement.</p>
+                <p><strong>Portion Control : </strong>Calorie counting encourages portion control, preventing overeating and promoting mindful eating habits.</p>
+        </div>
+    </div>
+
+    <footer class="mainfoot">
+        <div class="foot">
+            <h9 class="footer-text"><b>About Us</b></h9>
+            <br><br>
+            <p>SomniWell blends AI-powered sleep tracking with smart wellness tools. Predict your sleep quality, track BMI, crush goals with 12 unique workouts, and balance nutrition with a calorie counter—all in one sleek platform.</p>
+        </div>
+        <div class="foot">
+            <h9 class="footer-text"><b>News Letter</b></h9>
+            <br><br>
+            <p>Sign up for the latest products and updates</p>
+            <br>
+            <h9 class="footer-text"><b>Follow Us On</b></h9>
+            <br><br>
+            <a href="#" class="fa fa-facebook"></a>&nbsp&nbsp<a href="#" class="fa fa-twitter"></a>&nbsp&nbsp<a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+
+    <script>
+        function calculate() {
+            var age = parseInt(document.getElementById("age").value);
+            var weight = parseInt(document.getElementById("weight").value);
+            var height = parseInt(document.getElementById("height").value);
+            var gender = document.getElementById("gender").value;
+            var activity = document.getElementById("activity").value;
+
+            // Perform calorie calculation (BMR)
+            var bmr;
+            if (gender === "male") {
+                bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+            } else {
+                bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+            }
+
+            // Adjust BMR based on activity level
+            switch (activity) {
+                case "sedentary":
+                    bmr *= 1.2;
+                    break;
+                case "lightly_active":
+                    bmr *= 1.375;
+                    break;
+                case "moderately_active":
+                    bmr *= 1.55;
+                    break;
+                case "very_active":
+                    bmr *= 1.725;
+                    break;
+                case "extra_active":
+                    bmr *= 1.9;
+                    break;
+            }
+
+            // Display the result
+            var resultElement = document.getElementById("result");
+            resultElement.innerHTML = "<h2>Your Daily Calorie Intake should be <h2>"+ bmr.toFixed(2) + "<p> calories/day <p>";
+
+            // Display steps to improve health only if not already populated
+            var stepsElement = document.getElementById("steps");
+            if (!stepsElement.innerHTML) {
+                stepsElement.innerHTML = "<h2>Steps to Improve Health</h2><ul>" +
+                    "<li>Eat a balanced diet rich in fruits, vegetables, lean proteins, and whole grains.</li>" +
+                    "<li>Stay hydrated by drinking plenty of water throughout the day.</li>" +
+                    "<li>Get regular exercise, aiming for at least 30 minutes of moderate activity most days of the week.</li>" +
+                    "<li>Get enough sleep each night, aiming for 7-9 hours for most adults.</li>" +
+                    "<li>Manage stress through relaxation techniques such as deep breathing, meditation, or yoga.</li>" +
+                    "<li>Avoid smoking and limit alcohol consumption.</li>" +
+                    "<li>Visit your healthcare provider regularly for check-ups and preventive screenings.</li>" +
+                    "</ul>";
+            }
+        }
+    </script>
+</body>
+
+</html>
