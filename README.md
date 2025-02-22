@@ -4,7 +4,7 @@ Overview
 Somniwell is a health and wellness platform designed to help users improve their sleep quality, maintain a healthy body mass index (BMI), follow personalized workout routines, and track their daily calorie intake. Powered by machine learning, Somniwell provides tailored recommendations to enhance overall well-being.
 Somni means sleep in latin and well stands for Wellness, together Sleep & Wellness
 ![WhatsApp Image 2025-02-21 at 21 23 41_2afd06ea](https://github.com/user-attachments/assets/daf111ae-7871-4bad-a36c-18716edf05d5)
-![WhatsApp Image 2025-02-21 at 21 24 38_4fc9ca5d](https://github.com/user-attachments/assets/0bbe2e24-cebd-4334-bca9-79b9a5bbfd8f)
+![WhatsApp Image 2025-02-22 at 16 15 06_3ef34f7c](https://github.com/user-attachments/assets/8227946d-fbfc-442e-917a-22a048b7f400)
 
 
 Features
